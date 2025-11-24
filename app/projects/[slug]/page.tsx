@@ -1,10 +1,16 @@
-// /app/projects/[slug]/page.tsx
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { projects } from "@/data/projects";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -139,21 +145,28 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         {proj.gallery?.length ? (
           <section className="mt-10">
             <h2 className="text-xl font-semibold">Gallery</h2>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
-              {proj.gallery.map((img) => (
-                <figure
-                  key={img}
-                  className="relative aspect-[16/10] overflow-hidden rounded-lg border"
-                >
-                  <Image
-                    src={img}
-                    alt={`${proj.title} screenshot`}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 50vw, 100vw"
-                  />
-                </figure>
-              ))}
+
+            <div className="mt-4">
+              <Carousel opts={{ loop: true }}>
+                <CarouselContent>
+                  {proj.gallery.map((img) => (
+                    <CarouselItem key={img} className="basis-full">
+                      <figure className="relative w-full aspect-[16/9] overflow-hidden rounded-lg border">
+                        <Image
+                          src={img}
+                          alt={`${proj.title} screenshot`}
+                          fill
+                          className="object-cover"
+                        />
+                      </figure>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+
+                {/* Nav buttons */}
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
             </div>
           </section>
         ) : null}

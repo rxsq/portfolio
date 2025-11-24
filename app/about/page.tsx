@@ -13,34 +13,34 @@ export default function AboutPage() {
           {/* Bio */}
           <div className="md:col-span-2 space-y-4 text-zinc-700">
             <p>
-              Hi, I'm Andrew, a third-year Computer Programming & Analysis
-              student at Niagara College with a passion for building full-stack
-              applications that are both reliable and enjoyable to use. I like
-              working across the stack, whether that means designing clean UIs,
-              shaping APIs, or wiring up background services that make
-              everything run smoothly.
+              Hi, I'm Andrew Dionne, a software developer based in Ontario with
+              experience building web applications, backend APIs, and real-time
+              systems.
             </p>
+
             <p>
-              At AeroSports Parks, I've helped create dashboards, reporting
-              tools, and control systems that keep interactive arcade rooms
-              running for hundreds of players a day. My work has ranged from
-              building React/Node.js admin panels to writing C# services that
-              talk over UDP and serial connections to synchronize LED
-              controllers and devices in real time.
+              I'm currently completing my final term in the Computer Programming
+              & Analysis program at Niagara College. Through both coursework and
+              hands-on industry projects, I've learned how to design, build, and
+              deploy full-stack applications that solve real-world problems.
+              While I'm mostly interested in backend development and API design,
+              I also enjoy working on frontend interfaces and integrating
+              software with hardware systems.
             </p>
+
             <p>
-              What excites me most is turning complex problems into clear,
-              working solutions. Whether it's a scalable backend, a responsive
-              interface, or a system that blends software with hardware, I enjoy
-              taking ownership across the stack and making sure the final
-              product feels dependable and seamless for the people who use it.
+              Outside of programming, I spend time focusing on health and
+              fitness, exploring new technologies, and playing games.
             </p>
-            <p>
-              As I move toward graduation, I'm eager to keep building my
-              experience through internships, junior roles, and projects where I
-              can contribute as a full-stack developer and continue growing my
-              skills in both software and real-time systems.
-            </p>
+
+            {/*Resume */}
+            <a
+              href="/Andrew-Dionne-Resume.pdf"
+              download="Andrew-Dionne-Resume.pdf"
+              className="inline-block mt-4 rounded-md border px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-100 transition"
+            >
+              Download Resume (PDF)
+            </a>
           </div>
 
           {/* Quick facts */}
@@ -55,10 +55,10 @@ export default function AboutPage() {
                 Programming & Analysis (Diploma), Niagara College — expected Dec
                 2025
               </li>
-              <li>
+              {/* <li>
                 <span className="font-medium">Current:</span> Software Developer
                 @ Aerosports Parks
-              </li>
+              </li> */}
               <li>
                 <span className="font-medium">Focus:</span> Web apps,
                 dashboards, backend APIs, real-time control
@@ -69,42 +69,50 @@ export default function AboutPage() {
 
         {/* Skills / tools */}
         <section className="mt-12">
-          <h2 className="text-xl font-semibold">Skills & tools</h2>
+          <h2 className="text-xl font-semibold">Skills & Tools</h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Frontend</h3>
+              <h3 className="font-medium">Backend & APIs</h3>
               <p className="mt-2 text-sm text-zinc-600">
-                React, HTML/CSS, JavaScript, ASP.NET MVC, Responsive UI
+                Node.js, Express, .NET (MVC/API), REST APIs, Authentication (JWT
+                & Cookies)
               </p>
             </div>
-            <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Backend</h3>
-              <p className="mt-2 text-sm text-zinc-600">
-                Node.js, .NET (MVC/API), Express, REST, Auth (JWT/Cookies)
-              </p>
-            </div>
+
             <div className="rounded-lg border p-4">
               <h3 className="font-medium">Databases</h3>
               <p className="mt-2 text-sm text-zinc-600">
-                SQL Server, MySQL, SQLite, MongoDB
+                SQL Server, MySQL, SQLite, MongoDB, Entity Framework Core
               </p>
             </div>
+
             <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Cloud & Dev</h3>
+              <h3 className="font-medium">Frontend</h3>
               <p className="mt-2 text-sm text-zinc-600">
-                Azure, GitHub Actions, Postman, VS/VS Code
+                React, HTML/CSS, JavaScript/TypeScript, ASP.NET MVC, Responsive
+                UI
               </p>
             </div>
+
             <div className="rounded-lg border p-4">
               <h3 className="font-medium">Languages</h3>
               <p className="mt-2 text-sm text-zinc-600">
                 C#, JavaScript/TypeScript, Java, Python
               </p>
             </div>
+
             <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Hardware/Realtime</h3>
+              <h3 className="font-medium">Cloud & DevOps</h3>
               <p className="mt-2 text-sm text-zinc-600">
-                UDP, COM/serial integration for LED controllers & devices
+                Azure App Services, GitHub Actions, CI/CD, Postman
+              </p>
+            </div>
+
+            <div className="rounded-lg border p-4">
+              <h3 className="font-medium">Realtime & Hardware</h3>
+              <p className="mt-2 text-sm text-zinc-600">
+                UDP messaging, COM/Serial communication, PC/SC scanning, device
+                integration
               </p>
             </div>
           </div>
@@ -115,10 +123,14 @@ export default function AboutPage() {
           <div className="rounded-lg border p-6">
             <h2 className="font-medium">Currently open to</h2>
             <ul className="mt-3 list-disc pl-5 text-zinc-700">
-              <li>Internships or junior full-stack roles (React/Node/.NET)</li>
-              <li>Projects involving dashboards, scheduling, or reporting</li>
+              <li>Internships or junior software development roles</li>
               <li>
-                Systems that mix web backends with real-time device control
+                Opportunities involving web applications, APIs, or full-stack
+                work
+              </li>
+              <li>
+                Projects that involve problem-solving, system design, or
+                real-time technologies
               </li>
             </ul>
           </div>
