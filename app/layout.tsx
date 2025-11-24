@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
