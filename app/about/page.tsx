@@ -13,19 +13,19 @@ export default function AboutPage() {
           {/* Bio */}
           <div className="md:col-span-2 space-y-4 text-zinc-700">
             <p>
-              Hi, I'm Andrew Dionne, a software developer based in Ontario with
-              experience building web applications, backend APIs, and real-time
-              systems.
+              Hi, I&apos;m Andrew Dionne, a software developer based in Ontario
+              with experience building web applications, backend APIs, and
+              real-time systems.
             </p>
 
             <p>
-              I'm currently completing my final term in the Computer Programming
-              & Analysis program at Niagara College. Through both coursework and
-              hands-on industry projects, I've learned how to design, build, and
-              deploy full-stack applications that solve real-world problems.
-              While I'm mostly interested in backend development and API design,
-              I also enjoy working on frontend interfaces and integrating
-              software with hardware systems.
+              I&apos;m currently completing my final term in the Computer
+              Programming & Analysis program at Niagara College. Through both
+              coursework and hands-on industry projects, I&apos;ve learned how
+              to design, build, and deploy full-stack applications that solve
+              real-world problems. While I&apos;m mostly interested in backend
+              development and API design, I also enjoy working on frontend
+              interfaces and integrating software with hardware systems.
             </p>
 
             <p>
