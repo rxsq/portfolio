@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     template: "%s · Andrew Dionne",
   },
   description: "Software developer portfolio",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
