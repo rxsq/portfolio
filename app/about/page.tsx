@@ -20,12 +20,13 @@ export default function AboutPage() {
 
             <p>
               I&apos;m currently completing my final term in the Computer
-              Programming & Analysis program at Niagara College. Through both
-              coursework and hands-on industry projects, I&apos;ve learned how
-              to design, build, and deploy full-stack applications that solve
-              real-world problems. While I&apos;m mostly interested in backend
-              development and API design, I also enjoy working on frontend
-              interfaces and integrating software with hardware systems.
+              Programming &amp; Analysis program at Niagara College. Through
+              both coursework and hands-on industry projects, I&apos;ve learned
+              how to design, build, and deploy full-stack applications that
+              solve real-world problems. While I&apos;m mostly interested in
+              backend development and API design, I also enjoy working on
+              frontend interfaces and integrating software with hardware
+              systems.
             </p>
 
             <p>
@@ -33,7 +34,7 @@ export default function AboutPage() {
               fitness, exploring new technologies, and playing games.
             </p>
 
-            {/*Resume */}
+            {/* Resume */}
             <a
               href="/Andrew-Dionne-Resume.pdf"
               download="Andrew-Dionne-Resume.pdf"
@@ -52,8 +53,8 @@ export default function AboutPage() {
               </li>
               <li>
                 <span className="font-medium">Education:</span> Computer
-                Programming & Analysis (Diploma), Niagara College — expected Dec
-                2025
+                Programming &amp; Analysis (Diploma), Niagara College — expected
+                Dec 2025
               </li>
               {/* <li>
                 <span className="font-medium">Current:</span> Software Developer
@@ -69,13 +70,13 @@ export default function AboutPage() {
 
         {/* Skills / tools */}
         <section className="mt-12">
-          <h2 className="text-xl font-semibold">Skills & Tools</h2>
+          <h2 className="text-xl font-semibold">Skills &amp; Tools</h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Backend & APIs</h3>
+              <h3 className="font-medium">Backend &amp; APIs</h3>
               <p className="mt-2 text-sm text-zinc-600">
                 Node.js, Express, .NET (MVC/API), REST APIs, Authentication (JWT
-                & Cookies)
+                &amp; Cookies)
               </p>
             </div>
 
@@ -102,14 +103,14 @@ export default function AboutPage() {
             </div>
 
             <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Cloud & DevOps</h3>
+              <h3 className="font-medium">Cloud &amp; DevOps</h3>
               <p className="mt-2 text-sm text-zinc-600">
                 Azure App Services, GitHub Actions, CI/CD, Postman
               </p>
             </div>
 
             <div className="rounded-lg border p-4">
-              <h3 className="font-medium">Realtime & Hardware</h3>
+              <h3 className="font-medium">Realtime &amp; Hardware</h3>
               <p className="mt-2 text-sm text-zinc-600">
                 UDP messaging, COM/Serial communication, PC/SC scanning, device
                 integration
