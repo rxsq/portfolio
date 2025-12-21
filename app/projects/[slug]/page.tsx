@@ -16,17 +16,27 @@ export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const proj = projects.find((p) => p.slug === params.slug);
-  return { title: proj ? proj.title : "Project" };
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const proj = projects.find((p) => p.slug === slug);
+
+  return {
+    title: proj?.title ?? "Project",
+  };
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const proj = projects.find((p) => p.slug === params.slug);
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const proj = projects.find((p) => p.slug === slug);
   if (!proj) notFound();
 
   return (
@@ -129,7 +139,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </section>
         ) : null}
 
-        {/* Metrics / outcomes */}
+        {/* Metrics */}
         {proj.metrics?.length ? (
           <section className="mt-10">
             <h2 className="text-xl font-semibold">Outcomes</h2>
@@ -163,7 +173,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   ))}
                 </CarouselContent>
 
-                {/* Nav buttons */}
                 <CarouselPrevious className="left-2" />
                 <CarouselNext className="right-2" />
               </Carousel>
