@@ -243,4 +243,66 @@ export const projects: Project[] = [
       "Improved accuracy of hardware troubleshooting",
     ],
   },
+
+// -----------------------------------------------------------
+// Escape Room Puzzle Monitoring UI
+// -----------------------------------------------------------
+{
+  slug: "escape-room-puzzle-monitoring-ui",
+  title: "Escape Room Puzzle Monitoring UI",
+  summary:
+    "Staff dashboard used daily at a live escape room attraction to monitor puzzle hardware, diagnose issues, and trigger controls such as force solve and reset. The app connects a Next.js frontend to a Node.js backend, serial bridge, and ESP32-based puzzle hardware.",
+
+  cover: "/projects/escape-room-puzzle-monitoring-ui/cover-dashboard-overview.png",
+
+  gallery: [
+    "/projects/escape-room-puzzle-monitoring-ui/cover-dashboard-overview.png",
+    "/projects/escape-room-puzzle-monitoring-ui/satellite-live-view.png",
+    "/projects/escape-room-puzzle-monitoring-ui/power-puzzle-visualizer.png",
+    "/projects/escape-room-puzzle-monitoring-ui/developer-raw-state-view.png",
+    "/projects/escape-room-puzzle-monitoring-ui/escaoe-room-puzzle-hardware-integration.png"
+  ],
+
+  tags: [
+    "Next.js",
+    "Node.js",
+    "Express",
+    "Serial/COM",
+    "ESP32",
+    "Staff Tool",
+  ],
+
+  tech: [
+    "Next.js App Router",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js + Express",
+    "SerialPort communication",
+    "ESP32 / ESP-NOW hardware",
+    "Real-time polling dashboard",
+    "Hardware diagnostics",
+    "Staff control workflows",
+    "Windows startup scripts",
+  ],
+
+  role: "Sole full-stack / hardware integration developer",
+
+  period: "2026",
+
+  highlights: [
+    "Built a staff dashboard used daily to monitor live escape room puzzle hardware.",
+    "Created a Node.js/Express backend that receives puzzle state from a serial bridge and exposes clean API endpoints to the frontend.",
+    "Integrated ESP32-based puzzle hardware using serial communication between the backend, bridge device, and physical puzzle boards.",
+    "Designed live puzzle views for satellite alignment nodes, progress bars, solved state, device presence, and online status.",
+    "Built a visual power-puzzle page that displays expected wiring, current connections, incorrect connections, and solved state in a staff-readable format.",
+    "Added staff-safe force solve and reset controls with confirmation prompts to prevent accidental actions during operation.",
+    "Implemented backend offline handling, local logging, startup scripts, and stable defaults for a Windows deployment.",
+  ],
+
+  metrics: [
+    "Used daily in a live escape room environment.",
+    "Monitors multiple physical puzzle systems from one staff interface.",
+    "Improves troubleshooting by exposing live puzzle state, hardware status, and staff controls without needing to inspect the ESP32 devices directly.",
+  ],
+},
 ];
