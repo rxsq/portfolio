@@ -79,7 +79,7 @@ export default function ProjectsPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Demo
+                        Visit Website
                       </a>
                     )}
                     {p.links?.map((l) => (

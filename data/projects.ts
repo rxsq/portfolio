@@ -244,6 +244,69 @@ export const projects: Project[] = [
     ],
   },
 
+{
+  slug: "grumpy-uncle-designs-website",
+  title: "Grumpy Uncle Designs Website",
+  summary:
+    "Client website for a custom escape room, themed entertainment, and interactive-build company. Designed and developed a polished marketing site that presents services, project work, company background, FAQs, and a secure contact flow.",
+
+  cover: "/projects/grumpy-uncle-designs/cover-homepage.png",
+
+  gallery: [
+    "/projects/grumpy-uncle-designs/cover-homepage.png",
+    "/projects/grumpy-uncle-designs/builds-section.png",
+    "/projects/grumpy-uncle-designs/about-section.png",
+    "/projects/grumpy-uncle-designs/contact-section.png",
+    "/projects/grumpy-uncle-designs/faq-section.png",
+
+  ],
+
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Client Website",
+    "Vercel",
+    "Resend",
+  ],
+
+  tech: [
+    "Next.js App Router",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Responsive design",
+    "Reusable content-driven components",
+    "Cloudflare Turnstile",
+    "Resend email integration",
+    "Vercel deployment",
+    "Custom domain configuration",
+    "SEO and accessibility improvements",
+  ],
+
+  role: "Designer and full-stack developer",
+
+  period: "2026",
+
+  highlights: [
+    "Designed and developed the full public-facing website for Grumpy Uncle Designs, a business focused on escape rooms, themed environments, challenge rooms, custom props, and interactive attractions.",
+    "Translated client-provided content, branding direction, and project media into a clear website structure that highlights services, experience, and completed work.",
+    "Built responsive sections for the homepage, service offerings, project gallery, company background, FAQ content, and contact flow.",
+    "Created reusable, content-driven components so project details, services, FAQs, links, and site information can be updated without rebuilding page layouts.",
+    "Integrated a secure contact form using Resend for email delivery and Cloudflare Turnstile to reduce automated spam submissions.",
+    "Optimized the site for deployment with production environment variables, custom-domain setup, preview deployments, and a clean handoff process for the client.",
+    "Reviewed layout, accessibility, mobile responsiveness, image presentation, and SEO basics before launch.",
+  ],
+
+  metrics: [
+    "Built as a real client-facing business website.",
+    "Provides a central online presence for service inquiries, project showcases, and future Google Business Profile visibility.",
+    "Includes protected contact submissions and a maintainable content structure for future updates.",
+  ],
+
+  demo: "https://gudescaperoomproductions.com",
+},
+
 // -----------------------------------------------------------
 // Escape Room Puzzle Monitoring UI
 // -----------------------------------------------------------
@@ -305,4 +368,6 @@ export const projects: Project[] = [
     "Improves troubleshooting by exposing live puzzle state, hardware status, and staff controls without needing to inspect the ESP32 devices directly.",
   ],
 },
+
+
 ];

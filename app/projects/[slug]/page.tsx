@@ -85,7 +85,7 @@ export default async function ProjectPage({
                   className="rounded-md bg-black px-4 py-2 text-white"
                   href={proj.demo}
                 >
-                  Live Demo
+                  Visit Website
                 </a>
               )}
               {proj.links?.map((l) => (
